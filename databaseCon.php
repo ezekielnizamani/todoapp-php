@@ -1,11 +1,9 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-
-$conn = mysqli_connect($servername,$username,$password,"todoapp");
+define('SERVER_NAME','localhost');
+define('SERVER_USERNAME','root');
+define('SERVER_PASSWORD','');
+define('DB_NAME','todoapp');
+$conn = mysqli_connect(SERVER_NAME,SERVER_USERNAME,SERVER_PASSWORD,DB_NAME);
 if(!$conn){
     die('can not connect with mysql '.mysqli_connect_error());
 }
