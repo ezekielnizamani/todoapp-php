@@ -4,7 +4,6 @@ session_start();
 if(isset($_SESSION['username'])){
     header("location:/");
 }
-session_start();
 
 ?>
 <form action="signin.php" method="post">
